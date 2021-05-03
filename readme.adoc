@@ -1,0 +1,15 @@
+= Getting Windows 10 21H1
+
+Examine your Diagnostics and Feedback settings. Diagnostic Data should be set to 
+"Optional diagnostic data"
+
+If this is grayed out, set the following values in the registry `3`:
+
+
+----
+Key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+Values: AllowTelemetry, MaxTelemetryAllowed
+----
+
+
+
